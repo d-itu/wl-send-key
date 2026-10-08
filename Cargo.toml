@@ -1,0 +1,19 @@
+[package]
+name = "wl-send-key"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rustix = { version = "1.1.5", default-features = false, features = ["fs", "mm", "net"] }
+thiserror = { version = "2.0.21", default-features = false }
+tuplez = { version = "0.15.0", default-features = false }
+wayland-oxide = { git = "https://github.com/d-itu/wayland-oxide", features = ["std"] }
+
+[build-dependencies]
+wayland-oxide-scanner = { git = "https://github.com/d-itu/wayland-oxide" }
+
+[profile.prod]
+inherits = "release"
+lto = true
+panic = "abort"
+codegen-units = 1
