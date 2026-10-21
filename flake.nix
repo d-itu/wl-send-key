@@ -64,9 +64,6 @@
           manifest = (pkgs.lib.importTOML ./Cargo.toml).package;
           appDeps = rustPlatform.importCargoLock {
             lockFile = ./Cargo.lock;
-            outputHashes = {
-              "wayland-oxide-0.2.0" = "sha256-JKRLSHUYJ3pU21rsrcBGtdmZcue2xBTvvfbJCLrBE1M=";
-            };
           };
           stdDeps = rustPlatform.importCargoLock {
             lockFile = "${toolchain}/lib/rustlib/src/rust/library/Cargo.lock";
