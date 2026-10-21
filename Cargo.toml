@@ -7,10 +7,10 @@ edition = "2024"
 rustix = { version = "1.1.5", default-features = false, features = ["fs", "mm", "net"] }
 thiserror = { version = "2.0.21", default-features = false }
 tuplez = { version = "0.15.0", default-features = false }
-wayland-oxide = { git = "https://github.com/d-itu/wayland-oxide", features = ["std"] }
+wayland-oxide = { version = "0.2.0", features = ["std"] }
 
 [build-dependencies]
-wayland-oxide-scanner = { git = "https://github.com/d-itu/wayland-oxide" }
+wayland-oxide-scanner = "0.2.0"
 
 [profile.prod]
 inherits = "release"

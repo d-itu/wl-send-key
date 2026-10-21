@@ -188,7 +188,8 @@ checksum = "d245f478577f809a851594d02313b640fb437e0bb33866753cff937863096954"
 [[package]]
 name = "wayland-oxide"
 version = "0.2.0"
-source = "git+https://github.com/d-itu/wayland-oxide#aadee5c48f079dadcb0ab2ccb3d6ddeef1d859e0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b2a227609ff9e76c071032efb0b493824db15439e6b8de8e054a8a46855ec251"
 dependencies = [
  "bitflags",
  "thiserror",
@@ -198,7 +199,8 @@ dependencies = [
 [[package]]
 name = "wayland-oxide-scanner"
 version = "0.2.0"
-source = "git+https://github.com/d-itu/wayland-oxide#aadee5c48f079dadcb0ab2ccb3d6ddeef1d859e0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41955b544db7c4c90dbfeb52293902b1941667e1f058541e71ee9c5d616c9780"
 dependencies = [
  "prettyplease",
  "proc-macro2",
